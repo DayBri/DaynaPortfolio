@@ -31,9 +31,9 @@ export const ABOUT = {
 export const PROJECTS = [
   {
     title: 'Interactive Order Forms',
-    problem: 'Retail store staff had to order highly configurable bathroom products through slow, manual order forms that required knowing exact ranges and SKUs. This was error-prone and routinely produced incomplete or physically unbuildable configurations that reached the factory and had to be chased up and corrected.',
+    problem: 'Wholesale store staff had to order highly configurable bathroom products through slow, manual order forms that required knowing exact ranges and configurable features. This was error-prone and routinely produced incomplete or physically unbuildable configurations that reached the factory and had to be chased up and corrected.',
     solution: 'Interactive Order Forms is a multi-tenant web app that guides store staff through building only valid, manufacturable orders via a rule-enforcing cascading picker. On submission it groups the order into per-category PDFs, emails shareable links, and feeds finalised orders into the fulfilment pipeline.',
-    tech: ['C#', '.NET', 'Vue.js', 'MongoDB', 'AWS EC2', 'AWS S3'],
+    tech: ['C#', '.NET', 'Vue.js', 'MongoDB', 'Docker', 'AWS EC2', 'AWS S3'],
     links: [{ label: 'View site', url: 'https://forms.adpaustralia.com.au' }],
     buildingType: 'factory',
     color: '#e79551',
