@@ -1,0 +1,46 @@
+/* Global styles. Component styles live in each .vue file. */
+:root {
+  --gutter: 24px;
+  --font: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+@media (max-width: 720px) {
+  :root {
+    --gutter: 16px;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden !important;
+  /* Sky gradient sits behind the transparent WebGL canvas */
+  background: radial-gradient(ellipse at 50% 35%, #fff6e5 0%, #ffd9c2 30%, #b9c8f5 70%, #8fa6e8 100%);
+}
+
+/* Let the sky show through Vuetify's app shell, and use our font everywhere. */
+.v-application.portfolio-app {
+  background: transparent !important;
+  font-family: var(--font);
+}
+.portfolio-app [class*='text-'] {
+  font-family: var(--font) !important;
+}
+
+/* Frosted-glass surface used by the header buttons, nav and card. */
+.glass {
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+}
+
+.interactive {
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
