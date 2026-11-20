@@ -5,7 +5,7 @@ import vuetify from 'vite-plugin-vuetify';
 
 export default defineConfig({
   // Relative base so the build works on GitHub Pages / any sub-path host.
-  base: '/dayna-portfolio/',
+  base: '/DaynaPortfolio/',
   plugins: [vue(), vuetify({ autoImport: true })],
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
