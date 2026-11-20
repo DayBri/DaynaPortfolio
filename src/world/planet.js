@@ -15,12 +15,12 @@ export function createPlanet(R, stopAngles) {
   const rand = seededRandom(42);
 
   // Ground
-  const ground = mesh(new THREE.IcosahedronGeometry(R, 4), mat('#7cc47f'), { cast: false });
+  const ground = mesh(new THREE.IcosahedronGeometry(R, 4), mat('#4c8d4e'), { cast: false });
   jitter(ground.geometry, 0.08, rand);
   pivot.add(ground);
 
   // Walking path ring
-  const path = mesh(new THREE.TorusGeometry(R - 0.24, 0.32, 6, 96), mat('#e9d8a6'), { cast: false });
+  const path = mesh(new THREE.TorusGeometry(R - 0.24, 0.32, 6, 96), mat('#beb69d'), { cast: false });
   pivot.add(path);
 
   // Path stones marking each stop
@@ -47,7 +47,7 @@ export function createPlanet(R, stopAngles) {
   }
 
   // Flowers sprinkled near the path for colour.
-  const flowerColors = ['#ffd166', '#ef476f', '#ffffff', '#c77dff'];
+  const flowerColors = ['#66a3ff', '#ef476f', '#ffffff', '#c77dff'];
   for (let i = 0; i < 160; i++) {
     const theta = rand() * Math.PI * 2;
     const side = rand() < 0.5 ? -1 : 1;
@@ -60,7 +60,7 @@ export function createPlanet(R, stopAngles) {
   }
 
   // Underside: a few hanging rock spikes so it reads as a floating island.
-  const rockMat = mat('#8d7b68');
+  const rockMat = mat('#756b60');
   for (let i = 0; i < 9; i++) {
     const h = 2 + rand() * 3;
     const cone = mesh(new THREE.ConeGeometry(0.9 + rand() * 0.8, h, 6), rockMat);

@@ -1,4 +1,4 @@
-# Floating World Portfolio
+# My Portfolio
 
 A portfolio built with Vue 3, Vuetify 3 and three.js. A character walks around a small floating planet, and each building is a project.
 
@@ -8,13 +8,6 @@ npm install
 npm run dev       # local dev server
 npm run build     # static site in dist/ (deploy to GitHub Pages, Netlify, Vercel…)
 ```
-
-## Make it yours
-- **Content:** edit `src/content.js` for your name, tagline, socials, the about card and the projects.
-- **Icons:** socials use `@mdi/js` SVG icons. Import the ones you want at the top of `content.js`.
-- **Theme:** colours are in `src/plugins/vuetify.js`.
-- **Models:** see `public/models/README.md` to swap placeholders for your own GLBs.
-- **Deep links:** `/#2` opens directly at project 2.
 
 ## Architecture
 The 3D world is plain three.js with no Vue inside it. Vue drives it through a small API and receives callbacks; the two sides share state through one composable.

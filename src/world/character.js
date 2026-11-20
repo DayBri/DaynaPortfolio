@@ -15,7 +15,7 @@ export function createCharacter(R, modelFile) {
   root.add(body);
 
   const skin = mat('#f1c27d');
-  const shirt = mat('#bb55be');
+  const shirt = mat('#7d7cbe');
   const pants = mat('#151817');
 
   const torso = mesh(new THREE.CapsuleGeometry(0.22, 0.4, 4, 8), shirt);
